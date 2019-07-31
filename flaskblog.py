@@ -1,6 +1,9 @@
 from flask import Flask, render_template, url_for
-
+from forms import RegistrationForm, LoginForm
 app = Flask(__name__)
+
+# Key only used for demo app. Make environment variable.
+app.config['SECRET_KEY'] = '77e6105f44f7aab694bd4aba5fca021d'
 
 posts = [
     {
